@@ -1,10 +1,10 @@
 language: csharp
-solution: src/BinarySearchTree.sln
+solution: ./src/BinarySearchTree.sln
 mono: none
 dotnet: 2.1.403
 
 install:
-  - dotnet restore
+  - dotnet restore ./src/
 
 script:
   - dotnet build ./src/
