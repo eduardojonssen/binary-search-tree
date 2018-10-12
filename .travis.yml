@@ -1,0 +1,11 @@
+language: csharp
+solution: src/BinarySearchTree.sln
+dotnet: 2.1.403
+
+install:
+  - nuget restore src/BinarySearchTree.sln
+  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
+script
+  - dotnet restore
+  - xbuild /p:Configuration=Release src/BinarySearchTree.sln
+  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./src/BinarySearchTree.Test/bin/Release/BinarySearchTree.Test.dll
