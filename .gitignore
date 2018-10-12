@@ -216,8 +216,6 @@ FakesAssemblies/
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
 
-\.idea/\.idea\.adc/\.idea/
+.idea/
 
-\.vscode/
-
-\.idea/\.idea\.adc/
+.vscode/
